@@ -7,10 +7,10 @@
         xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
         mc:Ignorable="d"
         Title="About"
-        Height="420"
+        Height="460"
         Width="400"
         ResizeMode="NoResize"
-        Icon="Resourses\Icon.png">
+        Icon="Resourses\Icon.ico">
     <StackPanel>
         <Image 
             Source="Resourses\pptxman.png"
@@ -64,8 +64,8 @@
                     Click="OK_Click"
                     Content="OK"
                     HorizontalAlignment="Right"
-                    Margin="0,10,25,0"
+                    Margin="0,30,25,0"
                     Width="90"
-                    Height="25"/>
+                    Height="35"/>
     </StackPanel>
 </Window>

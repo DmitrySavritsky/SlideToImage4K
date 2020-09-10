@@ -40,6 +40,9 @@
   <PropertyGroup>
     <StartupObject>Slide_to_Image_4K.App</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
@@ -137,12 +140,15 @@
     <Resource Include="Resourses\pptxman.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resourses\Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resourses\ChooseFile.png" />
     <Resource Include="Resourses\OutputFolder.png" />
     <Resource Include="Resourses\Resolution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.0.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.0.0\build\Fody.targets')" />
