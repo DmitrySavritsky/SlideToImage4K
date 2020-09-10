@@ -1,0 +1,240 @@
+﻿<Window x:Class="Slide_to_Image_4K.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Slide_to_Image_4K"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        mc:Ignorable="d"
+        Title="Slide to Image 4K"
+        Height="500"
+        ResizeMode="NoResize"
+        Width="780"
+        Icon="Resourses\Icon.png">
+
+    <Grid 
+        HorizontalAlignment="Center"
+        Width="700"
+        Margin="0,10,0,0"
+    >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"></RowDefinition>
+            <RowDefinition Height="95"></RowDefinition>
+            <RowDefinition Height="195"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="235"></ColumnDefinition>
+            <ColumnDefinition Width="245"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image 
+            Source="Resourses\ChooseFile.png"
+            Height="120"
+            HorizontalAlignment="Left"
+            Grid.Column="0"
+            Grid.Row="0"
+            Margin="-22,10,0,0"
+        />
+
+        <TextBlock 
+            FontSize="16"
+            Grid.Column="0"
+            Grid.Row="1"
+        >
+            <Bold>
+            Drag and drop <LineBreak/>
+            a presentation file <LineBreak/>
+            or select it manually
+            </Bold>
+        </TextBlock>
+
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="2"
+            HorizontalAlignment="Left"
+        >
+            <Grid
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+            >
+
+                <Rectangle
+                    StrokeDashArray="0.0 4.0 0.0"
+                    Stroke="Gray"
+                    StrokeThickness="2"
+                    RadiusX="15"
+                    RadiusY="15"
+                    Height="100"
+                    Width="120"
+                    HorizontalAlignment="Left"
+                >
+                </Rectangle>
+                <TextBlock
+                    x:Name="choosenFileName"
+                    Width="120"
+                    Drop="DragPresentation_OnDrop"
+                    AllowDrop="True"
+                    TextAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="Gray"
+                >
+                        drag and drop
+                        <LineBreak/>
+                        your file here
+                </TextBlock>
+            </Grid>
+
+            <Button
+                Content="Select file..."
+                Style="{StaticResource ButtonRevealStyle}"
+                Height="35"
+                FontSize="16"
+                Click="ChoosePresentation_Click"
+                Margin="0,40,0,0"
+                HorizontalAlignment="Left"
+                Width="120"
+            />
+        </StackPanel>
+
+        <Image
+            Source="Resourses\Resolution.png"
+            Height="120"
+            HorizontalAlignment="Left"
+            Grid.Column="1"
+            Grid.Row="0"
+            Margin="-20,10,0,0"
+        />
+        <TextBlock 
+            FontSize="16"
+            Grid.Column="1"
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+        >
+            <Bold>
+            Choose <LineBreak/>
+            slide resolution
+            </Bold>
+        </TextBlock>
+
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="2"
+            HorizontalAlignment="Left"
+        >
+            <RadioButton
+                x:Name="buttonHD"
+                Content="HD (1280x720 px)"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                VerticalContentAlignment="Center"
+                Checked="ButtonHD_Checked"
+                IsChecked="True"
+                FontSize="16"
+                Margin="0,0,0,0"
+            />
+            <RadioButton 
+                x:Name="buttonFullHD"
+                Content="Full HD (1920x1080 px)"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                VerticalContentAlignment="Center"
+                Checked="ButtonFullHD_Checked"
+                FontSize="16"
+                Margin="0,15,0,0"
+            />
+            <RadioButton
+                x:Name="button4K"
+                Content="4K (3840x2160 px)"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                VerticalContentAlignment="Center"
+                Checked="Button4K_Checked"
+                FontSize="16"
+                Margin="0,15,0,0"
+            />
+        </StackPanel>
+
+        <Image
+            Source="Resourses\OutputFolder.png"
+            Height="120"
+            HorizontalAlignment="Left"
+            Grid.Column="2"
+            Grid.Row="0"
+            Margin="-30,10,0,0"
+        />
+        <TextBlock
+            FontSize="16"
+            Grid.Column="2"
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+        >
+            <Bold>
+            Select output folder <LineBreak/>
+            and press 'Extract'
+            </Bold>
+        </TextBlock>
+
+        <StackPanel 
+            Grid.Column="2"
+            Grid.Row="2"
+            HorizontalAlignment="Stretch"
+        >
+            <StackPanel
+                Orientation="Horizontal"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Stretch"
+            >
+                <TextBox 
+                    x:Name="outputPathBox"
+                    HorizontalAlignment="Left"
+                    Text="TextBox"
+                    TextWrapping="NoWrap"
+                    VerticalAlignment="Top"
+                    Width="170"
+                    Style="{StaticResource TextBoxRevealStyle}"
+                    TextChanged="OutputPathBox_TextChanged"
+                />
+                <Button
+                    Content="..."
+                    Click="ChooseOutputFolderButton_Click"
+                    Width="35"
+                    Margin="15,0,0,0"
+                />
+            </StackPanel>
+
+            <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Bottom"
+                Margin="0,105,0,0"
+            >
+
+                <Button x:Name="buttonInformation"
+                    Content="About"
+                    Height="35"
+                    Style="{StaticResource ButtonRevealStyle}"
+                    Click="ButtonInformation_Click"
+                    FontSize="16"
+                    HorizontalAlignment="Left"
+                    Width="100"
+                    Margin="0,0,20,0"
+                />
+
+                <Button x:Name="buttonExtract"
+                    Content="Extract"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Width="100"
+                    Height="35"
+                    Click="ButtonExtract_Click"
+                    Background="#FFB24527"
+                    IsEnabled="False"
+                    FontSize="16"
+                    Foreground="White"
+                    />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
