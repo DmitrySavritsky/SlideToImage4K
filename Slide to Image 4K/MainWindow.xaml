@@ -286,6 +286,7 @@
                     Height="35"
                     Click="ButtonExtract_Click"
                     Background="#FFB24527"
+                    Foreground="White"
                     IsEnabled="False"
                     FontSize="16" Style="{DynamicResource ButtonStyle1}"
                     />
