@@ -73,12 +73,13 @@
                 </Rectangle>
                 <TextBlock
                     x:Name="choosenFileName"
-                    Width="120"
+                    Width="110"
                     Drop="DragPresentation_OnDrop"
                     AllowDrop="True"
                     TextAlignment="Center"
                     VerticalAlignment="Center"
                     Foreground="Gray"
+                    TextTrimming="CharacterEllipsis"
                 >
                         drag and drop
                         <LineBreak/>
@@ -232,7 +233,6 @@
                     Background="#FFB24527"
                     IsEnabled="False"
                     FontSize="16"
-                    Foreground="White"
                     />
             </StackPanel>
         </StackPanel>

@@ -134,9 +134,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resourses\FileIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resourses\pptxman.png" />
   </ItemGroup>
   <ItemGroup>
