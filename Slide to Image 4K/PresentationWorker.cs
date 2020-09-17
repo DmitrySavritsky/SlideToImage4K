@@ -56,7 +56,7 @@ namespace Slide_to_Image_4K
                 catch { MessageBox.Show("PowerPoint could not be closed properly"); }
             }
 
-            MessageBox.Show("Images extracted successfully!", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Slides extracted successfully", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
