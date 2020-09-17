@@ -1,4 +1,10 @@
-# Slide-to-Image-4K
- Application to create images from PowerPoint files
+# Slide to Image 4K
+Extract your PowerPoint slides to high resolution images easily.
 
-[Download link](https://github.com/DmitrySavritsky/Slide-to-image-4K/releases/tag/1.0)
+![Screen Shot](https://i.imgur.com/19YuDHz.png)
+
+By default Microsoft PowerPoint doesn't allow you to choose resolution of exported slides. This small utility solves the issue: simply choose your pptx file, choose resolution (up to 4K) and output folder.
+
+
+
+[Download](https://github.com/DmitrySavritsky/Slide-to-image-4K/releases/tag/1.0)
