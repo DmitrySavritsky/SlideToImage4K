@@ -124,17 +124,20 @@
                     Height="100"
                     Width="120"
                     HorizontalAlignment="Left"
+                    Fill="Transparent"
+                    AllowDrop="True"
+                    Drop="DragPresentation_OnDrop"
                 >
                 </Rectangle>
                 <TextBlock
                     x:Name="choosenFileName"
                     Width="110"
-                    Drop="DragPresentation_OnDrop"
-                    AllowDrop="True"
                     TextAlignment="Center"
                     VerticalAlignment="Center"
                     Foreground="Gray"
                     TextTrimming="CharacterEllipsis"
+                    AllowDrop="True"
+                    Drop="DragPresentation_OnDrop"
                 >
                         drag and drop
                         <LineBreak/>
