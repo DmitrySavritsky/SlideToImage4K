@@ -173,7 +173,7 @@
         >
             <Bold>
             Choose <LineBreak/>
-            slide resolution
+            image resolution
             </Bold>
         </TextBlock>
 
@@ -231,7 +231,7 @@
         >
             <Bold>
             Select output folder <LineBreak/>
-            and press 'Extract'
+            and press 'Export'
             </Bold>
         </TextBlock>
 
@@ -282,7 +282,7 @@
                 />
 
                 <Button x:Name="buttonExtract"
-                    Content="Extract"
+                    Content="Export"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Width="100"
