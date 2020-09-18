@@ -1,5 +1,5 @@
 # Slide to Image 4K
-![Logo](https://i.imgur.com/4SWxQ0S.png)
+![Logo](https://i.imgur.com/9t4yr8K.png)
 
 ![Screen Shot](https://i.imgur.com/19YuDHz.png)
 
