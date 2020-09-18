@@ -1,5 +1,5 @@
 # Slide to Image 4K
-![Logo](https://i.imgur.com/19YuDHz.png)https://i.imgur.com/eVfI2gx.png
+![Logo](https://i.imgur.com/eVfI2gx.png)
 Extract your PowerPoint slides to high resolution images easily.
 
 ![Screen Shot](https://i.imgur.com/19YuDHz.png)
