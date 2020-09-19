@@ -1,7 +1,7 @@
 # Slide to Image 4K
 ![Logo](https://i.imgur.com/uIQTnMr.png)
 
-![Screen Shot](https://i.imgur.com/19YuDHz.png)
+![Screen Shot](https://i.imgur.com/ZoSkwn5.png)
 
 By default Microsoft PowerPoint doesn't allow you to choose resolution of exported slides. This small utility solves the issue: simply choose your pptx file, choose resolution (up to 4K) and output folder.
 
