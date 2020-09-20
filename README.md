@@ -1,4 +1,3 @@
-# Slide to Image 4K
 ![Logo](https://i.imgur.com/uIQTnMr.png)
 
 ![Screen Shot](https://i.imgur.com/Ttf6osM.png)
