@@ -6,5 +6,6 @@ By default Microsoft PowerPoint doesn't allow you to choose resolution of export
 
 ## How it works
 ![Video](https://i.imgur.com/0iJjRJJ.gif)
+[Imgur](https://i.imgur.com/0iJjRJJ.gifv)
 
 ## [Download here](https://github.com/DmitrySavritsky/Slide-to-image-4K/releases/tag/1.0)
